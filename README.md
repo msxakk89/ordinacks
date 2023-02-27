@@ -42,26 +42,6 @@ What we are proposing here can be thought of as a "bridge" between bitcoin and s
 
 _explain solution in more detail here_
 
-## Business model
-
-Whenever a proud owner of Ordinal mints an Ordinack, a fee of 25 STX is payable to contract owner. The fee can be changed by the contract owner at any time and contract owner can also bestow contract ownership to another principal.  
-
 ## Future work: how could this project be expanded in the future?
 
  _to be continued_
-
-_consider these extra sections:_
-
-`## Inspiration
-
-## What it does
-
-## How we built it
-
-## Challenges we ran into
-
-## Accomplishments that we're proud of
-
-## What we learned
-
-## What's next for Ordinacks`
