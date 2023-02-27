@@ -48,4 +48,20 @@ Whenever a proud owner of Ordinal mints an Ordinack, a fee of 25 STX is payable 
 
 ## Future work: how could this project be expanded in the future?
 
- _to be continued by Shakira_
+ _to be continued_
+
+_consider these extra sections:_
+
+`## Inspiration
+
+## What it does
+
+## How we built it
+
+## Challenges we ran into
+
+## Accomplishments that we're proud of
+
+## What we learned
+
+## What's next for Ordinacks`
