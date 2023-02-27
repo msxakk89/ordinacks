@@ -1,5 +1,7 @@
 # Ordinacks
 
+# THIS REPO IS A WORK IN PROGRESS AND HAD NOT BEEN COMPLETED YET
+
 ## Background
 
 Can you imagine an [Ordinal](https://github.com/casey/ord) giving birth to Ordinacks? In 1837, Charles Darwin thought of a tree of life where leafs and branches represent species and nodes of the tree represent a point in the past where a _common ancestor_ has been split into two groups that then evolve independently.  
