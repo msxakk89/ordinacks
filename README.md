@@ -1,4 +1,4 @@
-# Ordinacks
+# Ordinacks: Avataring Bitcoin Ordinals
 
 # THIS REPO IS A WORK IN PROGRESS AND HAD NOT BEEN COMPLETED YET
 

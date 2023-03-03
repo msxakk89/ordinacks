@@ -13,11 +13,6 @@ path = 'contracts/ordinacks.clar'
 clarity_version = 1
 epoch = 2.0
 
-[contracts.ordinacks-mint]
-path = 'contracts/ordinacks-mint.clar'
-clarity_version = 1
-epoch = 2.0
-
 [contracts.utils]
 path = 'contracts/utils.clar'
 clarity_version = 1
