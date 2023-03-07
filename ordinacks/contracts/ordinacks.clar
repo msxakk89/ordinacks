@@ -16,7 +16,6 @@
 ;; >> error codes constants <<
 (define-constant ERR_CANNOT_UNWRAP_TX_ID (err u100))
 (define-constant ERR_NOT_VALID_SIGNATURE (err u102))
-(define-constant ERR_CANNOT_UNWRAP_PUB_KEY (err u103))
 (define-constant ERR_CANNOT_GENERATE_P2PKH_address (err u104))
 (define-constant ERR_UNAUTHORISED (err u105))
 (define-constant ERR_HAS_NOT_PASSED_REVIEW (err u106))
@@ -27,7 +26,7 @@
 (define-data-var last-request-id uint u0)
 (define-data-var last-request-id-reviewed uint u0)
 (define-data-var request_price uint u5000000)
-(define-data-var contract_owner principal DEPLOYER) ;; contract owner can change
+(define-data-var contract_owner principal tx-sender) ;; contract owner can change
 
 ;; >> maps <<
 ;; avataring-requests-db
@@ -119,6 +118,7 @@
 ;; ARGs
 ;; genesis | (string-ascii 64) | msg containing ordinal genesis tsx, that was signed with private key behind public key of the btc address where the ordinal exists
 ;; sig | (buff 65) | digital signature generated with secp256k1 signrec algorithm upon the msg containing ordinal genesis tsx id
+;; pub_key | ((buff 33)) | pub key corresponding to btc destination address of genesis tsx
 ;; ATTENTION! : not valid signature will prevent registering avataring request
 ;; ATTENTION! : if valid signature is provided but ordinal does not exist at the correct address, fee will be paid but no ordinack issued
 (define-public (submit-avataring-request (genesis (string-ascii 64)) (sig (buff 65)) (pub_key (buff 33))) 
@@ -181,6 +181,7 @@
     (asserts! (is-eq has_passed_review true) ERR_HAS_NOT_PASSED_REVIEW) ;; ensure avataring request has been approved
     (try! (nft-mint? ordinacks request_id requester)) ;; request_id matches ordinal_id
     (map-insert ordinacksdb request_id {genesis: genesis}) ;; insert new instance of ordinack
+    (var-set last-token-id (+ u1 (var-get last-token-id)))
     (ok true)
     )
 )
@@ -207,3 +208,4 @@
   (var-set contract_owner new_owner) 
   (ok true))
 )
+
