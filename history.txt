@@ -1,5 +1,0 @@
-#V2
-sha256('aaa')
-(sha256 0)
-(sha256 u0)
-(sha256 "aaa")
