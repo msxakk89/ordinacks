@@ -26,7 +26,7 @@ Now it is important to note that an avatar of Miles Quaritch does not capture a 
 
 Ordinacks are related to Ordinals in the same way that avatars are related to humans:
 
-- The Ordinack is derived from Ordinal via a cryptographic proof of ownership. In other words, Ordinal can give birth to Ordinacks if and only if such a cryptographic proof has been presented. Therefore, a Ordinack represents a certificate _certifying that the FIRST holder of the Stackdinal was in possession of private keys that controlled the bitcoin address holding given Ordinal inscription_.
+- The Ordinack is derived from Ordinal via a cryptographic proof of ownership. In other words, Ordinal can give birth to Ordinacks if and only if such a cryptographic proof has been presented. 
 - The Ordinack is not Ordinal and Ordinal is not Ordinacks but there is resemblance through cryptography.
 - Ordinacks and Ordinals are independent. The Ordinal can change hands, and so does the Ordinacks. Therefore the only thing we can be sure of is that the first owner of Ordinacks (when it was minted) was in possession of a given Ordinals.
 
