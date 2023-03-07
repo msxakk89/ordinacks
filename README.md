@@ -1,6 +1,7 @@
 # Ordinacks: Avataring Bitcoin Ordinals
 
 _This software comes with no warranty WHATSOEVER_
+
 _Extra caution needs to be taken when sending Ordinals due to the risk losing of inscriptions. User takes full risk with sending Ordinal inscriptions_
 
 ## Background
@@ -162,6 +163,14 @@ clarinet console
 ```
 (contract-call? .ordinacks inspect-request u1)
 (contract-call? .ordinacks approve-submission u1)
+```
+
+### Unit tests
+
+You can check all unit tests are O.K. with the command:
+
+```
+clarinet test
 ```
 
 ## Future work: how could this project be expanded in the future?
