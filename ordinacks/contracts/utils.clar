@@ -2,16 +2,13 @@
 ;; utilities contract for ordinacks avatars
 
 ;; >> read-only functions << 
+;; source: Clarity discord channel 
 ;; asci2buff: convert asci to buffer
 ;; ARGs
 ;; in | (string-ascii 100) | the string we wish to convert to buffer
 (define-read-only (asci2buff (in (string-ascii 100)))
     (fold ascii2buff_matcher in 0x)
 )
-
-;; (define-read-only (buff2ascii (in (buff 100))) 
-;;     (map buff2ascii_matcher in)
-;; )
 
 ;; >> private functions <<
 ;; ascii2buff_matcher: match single asci character with buff element
